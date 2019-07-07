@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS实现带边框的三角形</title>
+    <style>
+        #wrapper {
+            display: inline-block;
+            position: relative;
+            padding: 20px 30px;
+            margin-top: 100px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #BBFFEE;
+        }
+
+        #triangle {
+            position: absolute;
+            top: -30px;
+            margin-left: -15px;
+            width: 0px;
+            height: 0px;
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+        }
+        
+        #triangle div {
+            position: absolute;
+            top: -13px;
+            left: -14px;
+            width: 0px;
+            height: 0px;
+            border-width: 14px;
+            border-style: solid;
+            border-color: transparent transparent #BBFFEE transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="triangle">
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

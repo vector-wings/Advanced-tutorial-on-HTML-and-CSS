@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS实现三角形</title>
+    <style>
+        #box {
+            width: 0px;
+            height: 0px;
+            border-width: 20px;
+            border-style: solid;
+            border-color: red transparent transparent transparent;
+            overflow: hidden;
+        }
+
+        #box1 {
+            width: 0px;
+            height: 0px;
+            border-width: 20px;
+            border-style: solid;
+            border-color: transparent transparent transparent orange;
+            overflow: hidden;
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">下三角</div>
+    <div id="box1">上三角</div>
+</body>
+</html>
